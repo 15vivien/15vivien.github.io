@@ -22,6 +22,16 @@
   var header = document.querySelector('header');
   var links = document.querySelectorAll('nav a');
   var sections = document.querySelectorAll('section[id]');
+  var mb = document.querySelector('.menu-btn');
+  function closeMenu() { header.classList.remove('open'); mb.setAttribute('aria-expanded', 'false'); mb.textContent = '☰'; }
+  if (mb) {
+    mb.addEventListener('click', function () {
+      var o = header.classList.toggle('open');
+      mb.setAttribute('aria-expanded', o ? 'true' : 'false');
+      mb.textContent = o ? '✕' : '☰';
+    });
+    links.forEach(function (a) { a.addEventListener('click', closeMenu); });
+  }
   function onScroll() {
     var h = document.documentElement;
     var max = h.scrollHeight - h.clientHeight;

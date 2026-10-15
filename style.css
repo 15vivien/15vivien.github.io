@@ -146,9 +146,58 @@ nav a:active,.links a:active{color:var(--accent)}
 .logo,nav,.btn{white-space:nowrap}
 nav{gap:clamp(14px,1.8vw,28px)}
 .disc{font:500 14px "IBM Plex Sans",sans-serif;color:#fff}
-@media(max-width:1280px){nav{font-size:13px}}
-@media(max-width:1020px){nav{display:none}}
 
 /* ===== Logos entreprises ===== */
 .logo-box{width:132px;height:84px}
 .logo-box:has(img:not([style*="none"])){border-style:solid;border-color:var(--line)}
+
+.facets{margin-top:64px}
+
+/* ===== Parcours (bordeaux) & projets (blanc) ===== */
+.wine{background:#53101f;color:#f3e9e6;padding:96px 0;margin-top:96px;box-shadow:0 0 0 100vmax #53101f;clip-path:inset(0 -100vmax)}
+.wine .sh h2{color:#fff}.wine .sh hr{border-color:#7a2a38}.wine .sh .t{color:#dcb8bf}.wine .sh .n{color:#ff9aab}
+.wine .tl{border-color:#7a2a38}.wine .job::before{background:#53101f;border-color:#ff9aab}
+.wine .job:hover::before{background:#ff9aab}
+.wine .when{color:#dcb8bf}.wine .job h3{color:#fff}.wine .org{color:#ffb3c1}.wine .job li{color:#f3e9e6}
+.sh.sub h2{font-size:clamp(30px,4.5vw,46px)}
+.proj ul{margin:16px 0 0;padding-left:18px}.proj li{margin-bottom:8px;font-size:16px}
+.proj .jh{margin:14px 0 0}.proj .logo-box{width:112px;height:72px}
+.proj .org{font:400 14px "IBM Plex Mono",monospace;margin:0}
+
+.grid.proj{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+
+
+/* ===== En-tête : fond sombre + menu responsive ===== */
+header{background:#26262b;border-bottom:1px solid #3a3a42;padding:14px 3vw;gap:20px}
+.logo{color:#fff;font-size:17px}.logo i{background:#e5798c}
+nav{color:#b8b8c2;gap:clamp(12px,1.3vw,26px);font-size:clamp(12px,.95vw,14px);white-space:nowrap}
+nav a:hover,nav a.active{color:#fff;border-color:#e5798c}
+nav a:active{color:#ff9aab}
+header .btn{color:#fff;border-color:rgba(255,255,255,.45);padding:10px 18px;font-size:13px;margin-left:0}
+header .btn:hover{color:#fff;border-color:#e5798c}
+header .btn:active{background:var(--accent);border-color:var(--accent);color:#fff}
+#bar{background:#e5798c}
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.45);color:#fff;font-size:20px;line-height:1;padding:8px 13px;cursor:pointer}
+.menu-btn:active{background:var(--accent);border-color:var(--accent)}
+@media(max-width:1220px){
+  .menu-btn{display:block}
+  header .btn{margin-left:auto}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:#26262b;padding:6px 3vw 14px;border-bottom:1px solid #3a3a42;font-size:15px}
+  header.open nav{display:flex}
+  nav a{padding:13px 0;border-bottom:1px solid #3a3a42}
+}
+@media(max-width:560px){header .btn{display:none}.menu-btn{margin-left:auto}}
+
+.cell.feature{grid-column:1/-1;background:var(--bg2)}
+.cell.feature p{max-width:60em}
+.cell.feature .org{margin:0 0 12px}
+.cell .chips{margin-top:16px}
+.cell .btn{margin-top:20px}
+
+.cell .role{font:500 15px "IBM Plex Mono",monospace;color:var(--navy);margin:0 0 10px}
+.cell .role span{color:var(--mute);text-transform:uppercase;font-size:12px;letter-spacing:.08em;margin-right:10px}
+.proj .cell h4{margin:0 0 8px}
+.proj .jh{margin:6px 0 4px}
+
+.cell .tech{margin-top:20px;margin-bottom:0}
+.cell .tech+.chips{margin-top:10px}

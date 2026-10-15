@@ -12,17 +12,20 @@
 <header>
   <a class="logo" href="#top"><i></i>VIVIEN AKSANTI</a>
   <nav>
-    <a href="#profil">01 · Profil</a><a href="#parcours">02 · Parcours</a><a href="#competences">03 · Compétences</a><a href="#formation">04 · Formation</a><a href="#interets">05 · Intérêts</a><a href="#contact">06 · Contact</a>
+    <a href="#profil">01<span class="dt"> ·</span> Profil</a><a href="#parcours">02<span class="dt"> ·</span> Parcours</a><a href="#projets">03<span class="dt"> ·</span> Projets</a><a href="#competences">04<span class="dt"> ·</span> Compétences</a><a href="#formation">05<span class="dt"> ·</span> Formation</a><a href="#interets">06<span class="dt"> ·</span> Intérêts</a><a href="#contact">07<span class="dt"> ·</span> Contact</a>
   </nav>
   <a class="btn" href="#contact">Me contacter</a>
+  <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 </header>
 <main id="top">
   <div class="hero">
     <div>
-      <div class="ref"><span>DOSSIER PROFESSIONNEL — RÉF. VA-2026</span><span class="ok">DISPONIBLE</span></div>
+      <div class="ref">
+        <span class="ok">DISPONIBLE</span>
+      </div>
       <h1>Vivien<br>Aksanti<b>.</b></h1>
       <p class="sub">Consultant en Transformation digitale|Développeur Power Platform , Low-code &amp; IA.</p>
-      <p class="tags">Power Apps · Power Automate · Power BI · Copilot Studio</p>
+      <p class="tags">Power Apps · Power Automate · Power BI · Copilot</p>
       <div class="cta"><a class="btn fill" href="#contact">Démarrer un échange →</a><a class="btn" href="#parcours">Voir le parcours</a></div>
     </div>
     <div class="photo">
@@ -51,8 +54,8 @@ Du support IT aux dashboards de conformité, du backlog à la recette, j'ai trav
     </div>
   </section>
 
-  <section id="parcours">
-    <div class="sh"><span class="n">02</span><h2>Parcours</h2><hr><span class="t">Expériences</span></div>
+  <section id="parcours" class="wine">
+    <div class="sh"><span class="n">02</span><h2>Parcours</h2><hr><span class="t">Expériences professionnelles</span></div>
     <div class="tl">
       <div class="job"><div class="when">Avril – Sept. 2026</div><div>
         <div class="jh"><div class="logo-box"><span>LOGO</span><img src="logos/credit-agricole-ps.png" alt="Logo Crédit Agricole Payment Services" onerror="this.style.display='none'"></div><div><h3>Chargé de transformation digitale, Microsoft 365 &amp; Power Platform</h3><p class="org">Crédit Agricole Payment Services · Guyancourt · Stage 6 mois</p></div></div>
@@ -61,11 +64,6 @@ Du support IT aux dashboards de conformité, du backlog à la recette, j'ai trav
         <li>Power BI : 3 dashboards (KPI de conformité, gestion des risques, reporting management).</li>
         <li>Copilot : synthèses documentaires et comptes rendus automatisés.</li>
         <li>Recueil des besoins, spécifications fonctionnelles, comités de suivi et sessions d'acculturation Microsoft 365.</li></ul></div></div>
-      <div class="job"><div class="when">Nov. 2025 – Janv. 2026</div><div>
-        <div class="jh"><div class="logo-box"><span>LOGO</span><img src="logos/sopra-steria.png" alt="Logo Projet académique avec Sopra Steria" onerror="this.style.display='none'"></div><div><h3>Product Owner</h3><p class="org">Projet académique avec Sopra Steria · Bordeaux</p></div></div>
-        <ul><li>Priorisation du backlog (user stories, critères d'acceptation, DoD) avec les parties prenantes.</li>
-        <li>Animation des cérémonies Scrum pour une équipe de 5 consultants-étudiants.</li>
-        <li>Plan de tests fonctionnels, pilotage de la recette utilisateur.</li></ul></div></div>
       <div class="job"><div class="when">Mai – Août 2025</div><div>
         <div class="jh"><div class="logo-box"><span>LOGO</span><img src="logos/jmc.png" alt="Logo JMC" onerror="this.style.display='none'"></div><div><h3>Chargé de système d'information</h3><p class="org">JMC · Bordeaux · Stage</p></div></div>
         <ul><li>Cartographie des flux et diagnostic des processus pour identifier les leviers de digitalisation.</li>
@@ -85,14 +83,58 @@ Du support IT aux dashboards de conformité, du backlog à la recette, j'ai trav
     </div>
   </section>
 
+  <section id="projets">
+    <div class="sh"><span class="n">03</span><h2>Projets</h2><hr><span class="t">Réalisations</span></div>
+    <div class="grid proj">
+      <div class="cell feature"><h3>Article · Publication</h3>
+        <h4>Low-code et digitalisation des processus métier : bénéfices, limites et facteurs de réussite</h4>
+        <p class="org">Vivien Aksanti · Master 2 MIAGE, Université de Bordeaux</p>
+        <p>Jusqu'où les plateformes low-code peuvent-elles transformer une organisation, et à quelles conditions ? Définitions, usages (AXA, SNCF, Rotterdam), Power Platform et Citizen Development, bénéfices, limites et six facteurs clés de réussite : besoins métier, choix de l'outil, implication des utilisateurs, accompagnement, gouvernance et amélioration continue.</p>
+        <div class="chips"><span>Low-code</span><span>Citizen Development</span><span>Gouvernance</span><span>Power Platform</span></div>
+        <a class="btn fill" href="article-low-code.pdf" target="_blank" rel="noopener">Lire l'article (PDF) →</a></div>
+      
+      <div class="cell"><h3>Projet académique · Application mobile Android · Janv. – Mars 2026</h3>
+        <p class="role"><span>Rôle</span>Co-développeur</p>
+        <h4>Learnity</h4>
+        <p class="org">Application éducative et sociale pour les futurs M2 MIAGISTES</p>
+        <ul><li>Application mobile Android qui transforme la procrastination en impact social.</li>
+        <li>IA générative : création automatique de quiz personnalisés à partir des notes de cours des anciens étudiants.</li>
+        <li>Chaque erreur ou session manquée génère une « dette virtuelle ».</li>
+        <li>Volet social : en fin de mois, l'utilisateur peut solder sa dette par des dons volontaires à des associations caritatives (via des liens externes), pour allier réussite académique et responsabilité citoyenne.</li></ul>
+        <p class="role tech"><span>Technologies</span></p>
+        <div class="chips"><span>Kotlin</span><span>Android Studio</span><span>Firebase</span><span>JSON</span></div></div>
+      <div class="cell"><h3>Projet académique · Audit des systèmes d'information · Sept. – Oct. 2025</h3>
+        <p class="role"><span>Rôle</span>Auditeur SI</p>
+        <h4>Audit interne d'un projet IT en difficulté (cas d'étude)</h4>
+        <p class="org">Master 2 MIAGE · Bordeaux</p>
+        <ul><li>Cas d'étude : projet de gestion hôtelière d'une société de services numériques fictive.</li>
+        <li>Plan d'audit et conduite de l'audit via un référentiel d'audit par processus (gestion de projet, exigences, sécurité du codage, tests, risques, livraison).</li>
+        <li>Formalisation des constats (non-conformités majeures / mineures) et des actions correctives et préventives proposées.</li></ul>
+        <p class="role tech"><span>Livrables</span></p>
+        <div class="chips"><span>Plan d'audit</span><span>Référentiel d'audit par processus</span><span>Constats (non-conformités majeures / mineures)</span><span>Actions correctives et préventives</span></div></div>
+      <div class="cell"><h3>Projet académique · Développement logiciel · Nov. 2024 – Avril. 2025</h3>
+        <p class="role"><span>Rôle</span>Product Owner</p>
+        <h4>Plateforme de staffing de missions</h4>
+        <div class="jh"><div class="logo-box"><span>LOGO</span><img src="logos/sopra-steria.png" alt="Logo Sopra Steria" onerror="this.style.display='none'"></div><div><p class="org">Avec Sopra Steria · Bordeaux</p></div></div>
+        <ul><li>Plateforme web de staffing pour la gestion des projets en entreprise : enregistrement des collaborateurs (rôles, compétences, grade, disponibilité), création de projets, recherche et affectation des équipes, tableau de bord de suivi.</li>
+        <li>Co-rédaction du cahier des charges : objectifs, périmètre fonctionnel, cas d'usage, critères d'acceptation, contraintes (accès par rôle, RGPD).</li>
+        <li>Priorisation du backlog (user stories, critères d'acceptation, DoD) avec les parties prenantes.</li>
+        <li>Animation des cérémonies Scrum pour une équipe de 5 consultants-étudiants.</li>
+        <li>Plan de tests fonctionnels, pilotage de la recette utilisateur.</li>
+        </ul>
+        <p class="role tech"><span>Architecture proposée</span></p>
+        <div class="chips"><span>HTML / CSS</span><span>React.js</span><span>Java Spring Boot</span><span>MySQL / PostgreSQL</span></div></div>
+    </div>
+  </section>
+
   <section id="competences" class="dark">
-    <div class="sh"><span class="n">03</span><h2>Compétences</h2><hr><span class="t">Compétences &amp; outils</span></div>
-    <div class="sk"><div class="group"><h3>// Power Platform &amp; low-code</h3><div class="chips"><span>Power Apps</span><span>Power Automate</span><span>Power BI</span><span>Copilot Studio</span><span>SharePoint</span><span>Teams</span><span>Planner</span><span>Forms</span><span>Odoo</span></div></div><div class="group"><h3>// Développement &amp; data</h3><div class="chips"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Dataverse</span><span>JavaScript</span><span>POO</span><span>GitHub</span></div></div><div class="group"><h3>// IA &amp; Cloud</h3><div class="chips"><span>Microsoft Copilot</span><span>IA agentique</span><span>Cloud</span><span>DevOps</span><span>Cybersécurité</span></div></div><div class="group"><h3>// Méthodes</h3><div class="chips"><span>Scrum</span><span>SAFe</span><span>Jira</span><span>Confluence</span><span>Trello</span><span>Cycle en V</span></div></div><div class="group"><h3>// Analyse &amp; recette</h3><div class="chips"><span>BPMN</span><span>Spécifications fonctionnelles</span><span>Tests fonctionnels</span><span>Gestion des anomalies</span></div></div><div class="group"><h3>// Savoir-être</h3><div class="chips"><span>Sens du service</span><span>Autonomie</span><span>Adaptabilité</span><span>Esprit d'analyse</span></div></div><div class="group wide"><h3>// Langues</h3><div class="lang-row" style="--w:95%"><span>Français</span><div class="bar"><i></i></div><span class="lv">Courant</span></div><div class="lang-row" style="--w:70%"><span>Anglais</span><div class="bar"><i></i></div><span class="lv">B2 · professionnel</span></div><div class="lang-row" style="--w:100%"><span>Swahili</span><div class="bar"><i></i></div><span class="lv">Langue maternelle</span></div></div>
+    <div class="sh"><span class="n">04</span><h2>Compétences</h2><hr><span class="t">Compétences &amp; outils</span></div>
+    <div class="sk"><div class="group"><h3>// Power Platform &amp; low-code</h3><div class="chips"><span>Power Apps</span><span>Power Automate</span><span>Power BI</span><span>Copilot Studio</span><span>SharePoint</span><span>Teams</span><span>Planner</span><span>Forms</span><span>Odoo</span></div></div><div class="group"><h3>// Développement &amp; data</h3><div class="chips"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Dataverse</span><span>JavaScript</span><span>POO</span><span>GitHub</span><span>Kotlin</span><span>Android Studio</span><span>Firebase</span></div></div><div class="group"><h3>// IA &amp; Cloud</h3><div class="chips"><span>IA générative: Microsoft Copilot, Claude,ChatGPT,GitHub Copilot</span><span>IA agentique: Copilot Studio</span><span>Cloud: AWS</span></div></div><div class="group"><h3>// Méthodes &amp; Outils de gestion des projets</h3><div class="chips"><span>Scrum</span><span>SAFe</span><span>Cycle en V</span><span>Trello</span><span>Jira</span><span>Confluence</span></div></div><div class="group"><h3>// Analyse &amp; recette</h3><div class="chips"><span>BPMN</span><span>Spécifications fonctionnelles</span><span>Tests fonctionnels</span><span>Gestion des anomalies</span></div></div><div class="group"><h3>// Savoir-être</h3><div class="chips"><span>Sens du service</span><span>Autonomie</span><span>Adaptabilité</span><span>Esprit d'analyse</span></div></div><div class="group wide"><h3>// Langues</h3><div class="lang-row" style="--w:95%"><span>Français</span><div class="bar"><i></i></div><span class="lv">Courant</span></div><div class="lang-row" style="--w:70%"><span>Anglais</span><div class="bar"><i></i></div><span class="lv">B2 · professionnel</span></div><div class="lang-row" style="--w:100%"><span>Swahili</span><div class="bar"><i></i></div><span class="lv">Langue maternelle</span></div></div>
     </div>
   </section>
 
   <section id="formation">
-    <div class="sh"><span class="n">04</span><h2>Formation</h2><hr><span class="t">Parcours académique</span></div>
+    <div class="sh"><span class="n">05</span><h2>Formation</h2><hr><span class="t">Parcours académique</span></div>
     <div class="tl">
       <div class="job">
         <div class="when">Sept. 2024 – Sept. 2026</div>
@@ -108,19 +150,19 @@ Du support IT aux dashboards de conformité, du backlog à la recette, j'ai trav
   </section>
 
   <section id="interets">
-    <div class="sh"><span class="n">05</span><h2>Centres d'intérêt</h2><hr><span class="t">En dehors du travail</span></div>
+    <div class="sh"><span class="n">06</span><h2>Centres d'intérêt</h2><hr><span class="t">En dehors du travail</span></div>
     <div class="grid"><div class="cell"><h3>Veille</h3><h4>Technologie</h4><p>IA, cybersécurité et Cloud : suivre les évolutions qui transforment les outils métiers.</p></div><div class="cell"><h3>Passion</h3><h4>Automobile</h4><p>Un intérêt pour l'univers automobile et ses innovations.</p></div><div class="cell"><h3>Sport</h3><h4>Football</h4><p>Un sport collectif, goût de l'esprit d'équipe.</p></div><div class="cell"><h3>Voyage</h3><h4>Découvrir le monde</h4><p>RDC, Burundi, France, Rwanda, Belgique : curiosité pour d'autres cultures.</p></div></div>
   </section>
 </main>
 
 <section id="contact" class="cta-band">
   <div>
-    <h2>Une opportunité de CDI à pourvoir <b>dès maintenant</b> ?</h2>
+    <h2>Une opportunité en CDI à pourvoir <b>dès maintenant</b> ?</h2>
     <p class="lead">Disponible immédiatement pour un échange, mobilité France entière.</p>
     <div class="cta"><a class="btn fill" href="mailto:vivienaksanti7@gmail.com">✉ vivienaksanti7@gmail.com</a><a class="btn" href="tel:+33744411303">☎ +33 7 44 41 13 03</a><a class="btn" href="https://linkedin.com/in/vivien-aksanti-m/" rel="noopener">in LinkedIn</a><a class="btn" href="https://github.com/15vivien" rel="noopener">GitHub</a></div>
   </div>
 </section>
-<footer><span>© 2026 VIVIEN AKSANTI</span><span>DOSSIER VA-2026</span></footer>
+<footer><span>© 2026 VIVIEN AKSANTI</span></footer>
 <script src="script.js" defer></script>
 </body>
 </html>
